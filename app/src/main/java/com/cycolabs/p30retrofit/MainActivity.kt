@@ -16,7 +16,9 @@ class MainActivity : AppCompatActivity() {
     //Server -> Response in JSON format -> RETROFIT -> Kotlin Object -> App
     //RETFROFIT provides authentication and POJO parse conversion for "source" of object.
 
-    //1-add dependency
+    //1-add dependencies: LiveData,ViewModel,Coroutine,Reftrofit,okhttp-logging
+    //2-add permissions: internet, network-state, wifi-state
+    //
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
