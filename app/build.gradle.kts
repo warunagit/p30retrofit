@@ -62,10 +62,10 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
 
     //retrofit
-    val retrofit_Version = "2.11.0"
+    val retrofit_Version = "2.3.0"
     implementation("com.squareup.retrofit2:retrofit:$retrofit_Version")
-    //converter
-    implementation("com.squareup.retrofit2:converter-gson")
+    //gson onverter
+    implementation("com.squareup.retrofit2:converter-gson:$retrofit_Version")
 
     //okhttp-logging-interceptor
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
