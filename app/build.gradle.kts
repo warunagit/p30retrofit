@@ -50,12 +50,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    //retrofit
-    val retrofit_Version = "2.11.0"
-    implementation("com.squareup.retrofit2:retrofit:$retrofit_Version")
-    //converter
-    implementation("com.squareup.retrofit2:converter-gson")
-
     val lifecycle_version = "2.8.7"
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
@@ -66,4 +60,13 @@ dependencies {
 
     //coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
+
+    //retrofit
+    val retrofit_Version = "2.11.0"
+    implementation("com.squareup.retrofit2:retrofit:$retrofit_Version")
+    //converter
+    implementation("com.squareup.retrofit2:converter-gson")
+
+    //okhttp-logging-interceptor
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 }
