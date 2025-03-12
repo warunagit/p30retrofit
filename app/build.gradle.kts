@@ -50,7 +50,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    val lifecycle_version = "2.8.7"
+    val lifecycle_version = "2.5.1"
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
     // LiveData
@@ -62,7 +62,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
 
     //retrofit
-    val retrofit_Version = "2.3.0"
+    val retrofit_Version = "2.9.0"
     implementation("com.squareup.retrofit2:retrofit:$retrofit_Version")
     //gson onverter
     implementation("com.squareup.retrofit2:converter-gson:$retrofit_Version")
