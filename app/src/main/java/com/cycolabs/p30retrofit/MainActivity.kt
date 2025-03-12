@@ -45,6 +45,10 @@ class MainActivity : AppCompatActivity() {
     //8-create class: RetrofitInstance
     //9-code MainActivity
 
+    //www.music.com/library/album?country=us&title=hello
+    //www.music.com - domain
+    //library/album? - path
+    //country=us&title=hello - query
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,8 +62,10 @@ class MainActivity : AppCompatActivity() {
 
         val responseLiveData: LiveData<Response<Albums>> =
             liveData {
-                val response = retrofitService.getAlbums()
-                emit(response)
+                //val response = retrofitService.getAlbums()
+
+                val response2 = retrofitService.getSpecificAlbums(6)
+                emit(response2)
             }
 
         responseLiveData.observe(this, Observer {
